@@ -200,6 +200,13 @@ And then install dependencies.
 $ cd your-project-name && npm install
 ```
 
+Then run in dev mode
+```bash
+$ npm run dev
+```
+
+You can then head to http://localhost:3000/ and should see the success response ✅.
+
 ### Security
 Since there is no Oauth / Authorize with instagram for the Inbox endpoint
 You will need to provide the user and pass of the account
