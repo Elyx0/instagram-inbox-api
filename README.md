@@ -7,7 +7,7 @@ A web api for reading instagram private inbox leveraging [micro](https://github.
 
 #### 1)  Request a token and get feeds and last message
 Method | Endpoint  | Query Parameters
------------- | -------------
+------------ | ------------- | -------------
 POST | /register | `{"user":"[username]","pass":"[accountPass]"}`
 
 #### Request
@@ -89,7 +89,7 @@ fetch('http://localhost:3000/register', {
 
 #### 2)  Use the token, username and get feeds
 Method | Endpoint  | Query Parameters
------------- | -------------
+------------ | ------------- | -------------
 POST | /read/:id | `{"user":"[user.nameFromPreviousCall]","token":"[tokenFromPreviousCall]"}`
 
 You will need the feed id of the conversation you want to retrieve for ex `data.feeds[0].id`
@@ -146,7 +146,7 @@ You will need the feed id of the conversation you want to retrieve for ex `data.
 
 #### Logging out
 Method | Endpoint  | Query Parameters
------------- | -------------
+------------ | ------------- | -------------
 POST | /logout | `{"user":"[user.nameFromInitialCall]","token":"[tokenFromInitialCall]"}`
 
  #### Request
