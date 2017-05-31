@@ -223,5 +223,5 @@ You can run the [AVA](https://github.com/sindresorhus/ava) and [ESLint](http://e
 ⚠️ If your frontend is in https and not the server hosting this, you might get a `Mixed Content` error. You need to setup a [SSL Nginx Proxy](http://tom.busby.ninja/letsecnrypt-nginx-reverse-proxy-no-downtime/)
 
 
-[travis-image]: https://travis-ci.org/Elyx0/instagram-inbox-api.git.svg?branch=master
+[travis-image]: https://travis-ci.org/Elyx0/instagram-inbox-api.svg?branch=master
 [travis-url]: https://travis-ci.org/Elyx0/instagram-inbox-api.git
