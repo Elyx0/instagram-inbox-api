@@ -1,4 +1,3 @@
-
 import path from 'path';
 import fs from 'fs';
 import crypto from 'crypto';
@@ -14,6 +13,11 @@ const { CookieNotValidError, AuthenticationError } = Client.Exceptions;
 const cors = require('micro-cors')();
 
 const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)));
+
+const cookiesJar = path.join(__dirname, '/cookies');
+if (!fs.existsSync(cookiesJar)) {
+  fs.mkdirSync(cookiesJar);
+}
 
 const paramError = {
   error: {

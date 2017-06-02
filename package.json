@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node --inspect src -r dotenv/config \" --ignore src/cookies --ignore test/",
     "build": "babel --require dotenv/config src -s -D -d dist",
-    "prestart": "npm run -s build",
     "test": "eslint src && ava -v test/**/*__test.js",
-    "watch": "ava -v --watch test/**/*__test.js"
+    "watch": "ava -v --watch test/**/*__test.js",
+    "start": "node dist"
   },
   "keywords": [
     "instagram",
@@ -18,13 +18,13 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "ava": "^0.19.1",
     "dotenv": "^4.0.0",
     "instagram-private-api": "^0.5.16",
     "lodash": "^4.17.4",
     "micro": "^7.3.3",
     "micro-cors": "^0.0.4",
     "microrouter": "^2.1.1",
-    "ava": "^0.19.1",
     "request-promise": "^4.2.1",
     "rewire": "^2.5.2",
     "test-listen": "^1.0.2"
